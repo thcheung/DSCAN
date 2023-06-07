@@ -129,7 +129,7 @@ def train():
     optimizer = optim.AdamW(
         model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
 
-    scheduler = get_linear_schedule_with_warmup(optimizer,int(0.05*args.epochs),int(args.epochs))
+    scheduler = get_linear_schedule_with_warmup(optimizer,int(0.1*args.epochs),int(args.epochs))
 
     comment = f'dual_{args.model}_{args.experiment}_{args.fold}'
 

@@ -27,14 +27,8 @@ class DualModel(nn.Module):
         self.textEncoder = self.get_text_model()
         self.freeze_textEncoder()
 
-
-        ## PHEME
-        # self.transformer1 = TransformerEncoder(TransformerEncoderLayer(hidden_dim, self.mh_size, hidden_dim, batch_first=True,dropout=dropout_rate), 2)
-        # self.transformer2 = TransformerEncoder(TransformerEncoderLayer(hidden_dim, self.mh_size, hidden_dim, batch_first=True,dropout=dropout_rate), 2)
-
-        ## RumourEval
-        self.transformer1 = TransformerEncoder(TransformerEncoderLayer(hidden_dim, self.mh_size, hidden_dim, batch_first=True,dropout=dropout_rate), 1)
-        self.transformer2 = TransformerEncoder(TransformerEncoderLayer(hidden_dim, self.mh_size, hidden_dim, batch_first=True,dropout=dropout_rate), 1)
+        self.transformer1 = TransformerEncoder(TransformerEncoderLayer(hidden_dim, self.mh_size, hidden_dim, batch_first=True,dropout=dropout_rate), 2)
+        self.transformer2 = TransformerEncoder(TransformerEncoderLayer(hidden_dim, self.mh_size, hidden_dim, batch_first=True,dropout=dropout_rate), 2)
 
         self.attn1 = nn.MultiheadAttention(hidden_dim, 1, batch_first=True,dropout=dropout_rate)
         self.attn2 = nn.MultiheadAttention(hidden_dim, 1, batch_first=True,dropout=dropout_rate)
