@@ -13,7 +13,7 @@ from torch.utils.tensorboard import SummaryWriter
 from sklearn.metrics import f1_score, accuracy_score
 from data_loader import DualGraphDataset
 from model import get_model
-from utils import print_metrics
+from utils import print_metrics, labels_to_weights
 from experiment import get_experiment
 from transformers import logging
 import warnings
@@ -129,7 +129,7 @@ def train():
     optimizer = optim.AdamW(
         model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
 
-    scheduler = get_linear_schedule_with_warmup(optimizer,int(0.1*args.epochs),int(args.epochs))
+    scheduler = get_linear_schedule_with_warmup(optimizer,int(0.0*args.epochs),int(args.epochs))
 
     comment = f'dual_{args.model}_{args.experiment}_{args.fold}'
 

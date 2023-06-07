@@ -39,7 +39,7 @@ class DualModel(nn.Module):
 
     def get_text_model(self):
         if self.language == 'en':
-            return AutoModel.from_pretrained("cardiffnlp/twitter-roberta-base")
+            return AutoModel.from_pretrained("roberta-base")
         elif self.language == 'cn':
             return AutoModel.from_pretrained("bert-base-chinese")
 

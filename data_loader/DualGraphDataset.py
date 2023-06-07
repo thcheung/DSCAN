@@ -85,7 +85,7 @@ class DualGraphDataset(Dataset):
 
     def _get_tokenizer(self):
         if self.language == 'en':
-            return AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base")
+            return AutoTokenizer.from_pretrained("roberta-base")
         elif self.language == 'cn':
             return AutoTokenizer.from_pretrained("bert-base-chinese")
 
