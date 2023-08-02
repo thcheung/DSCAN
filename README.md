@@ -1,5 +1,5 @@
 # DSCAN
-The official code of paper, "Dual-Stream Cross-Attentive Network for Claim Veracity Assessment with Social and External Evidence", submitted to Applied Intelligence
+The official code of paper, "Dual-Stream Cross-Attentive Network for Claim Veracity Assessment with Social and External Evidence", submitted to Applied Intelligence.
 
 ## Datasets
 
