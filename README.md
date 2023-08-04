@@ -1,9 +1,9 @@
 # DSCAN
-The official code of paper, "Dual-Stream Cross-Attentive Network for Claim Veracity Assessment with Social and External Evidence".
+The official code of paper, "Dual-Stream Cross-Attentive Network for Claim Veracity Assessment with Social and External Evidence". Submitted to Engineering Applications of AI.
 
 ## Datasets
 
-The datasets can be downloaded below.
+The datasets can be downloaded below. The password will be provided once the paper has been accepted.
 
 - [PHEME Dataset](https://figshare.com/articles/dataset/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/6392078)
 
