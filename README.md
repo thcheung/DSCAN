@@ -8,3 +8,16 @@ The datasets can be downloaded below. The password will be provided once the pap
 - [PHEME Dataset](https://figshare.com/articles/dataset/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/6392078)
 
 - [RumourEval Dataset](https://figshare.com/articles/dataset/RumourEval_2019_data/8845580)
+
+## Citation
+
+Please cite my thesis if you found this project useful.
+
+```
+@article{cheung2024deep,
+  title={Deep learning for rumour detection and claim veracity assessment on social media},
+  author={Cheung, Tsun Hin},
+  year={2024},
+  publisher={Hong Kong Polytechnic University}
+}
+```
